@@ -32,3 +32,63 @@ class Peon(abc):
     icon = property(get_icon)
     color = property(get_color, set_color)
     is_alive = property(get_is_alive, set_is_alive)
+
+
+class Assasin(Peon):
+    _icon: str = "icons/assassin.png"
+
+    def available_move(self):
+        return True
+
+    def after_move(self):
+        return True
+
+
+class Chef(Peon):
+    _icon: str = "icons/chief.png"
+
+    def available_move(self):
+        return True
+
+    def after_move(self):
+        return True
+
+
+class Diplomate(Peon):
+    _icon: str = "icons/diplomate.png"
+
+    def available_move(self):
+        return True
+
+    def after_move(self):
+        return True
+
+
+class Militant(Peon):
+    _icon: str = "icons/militant.png"
+
+    def available_move(self):
+        return True
+
+    def after_move(self):
+        return True
+
+
+class Necromobile(Peon):
+    _icon: str = "icons/necromobile.png"
+
+    def available_move(self):
+        return True
+
+    def after_move(self):
+        return True
+
+
+class Reporter(Peon):
+    _icon: str = "icons/reporter.png"
+
+    def available_move(self):
+        return True
+
+    def after_move(self):
+        return True
